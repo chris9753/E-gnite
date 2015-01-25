@@ -1,0 +1,420 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		28EECA2C1A746E7800388F29 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28EECA2B1A746E7800388F29 /* AppDelegate.swift */; };
+		28EECA2E1A746E7800388F29 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28EECA2D1A746E7800388F29 /* ViewController.swift */; };
+		28EECA311A746E7800388F29 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28EECA2F1A746E7800388F29 /* Main.storyboard */; };
+		28EECA331A746E7800388F29 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 28EECA321A746E7800388F29 /* Images.xcassets */; };
+		28EECA361A746E7800388F29 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28EECA341A746E7800388F29 /* LaunchScreen.xib */; };
+		28EECA421A746E7800388F29 /* E_gniteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28EECA411A746E7800388F29 /* E_gniteTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		28EECA3C1A746E7800388F29 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 28EECA1E1A746E7800388F29 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 28EECA251A746E7800388F29;
+			remoteInfo = "E-gnite";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		28EECA261A746E7800388F29 /* E-gnite.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "E-gnite.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		28EECA2A1A746E7800388F29 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		28EECA2B1A746E7800388F29 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		28EECA2D1A746E7800388F29 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		28EECA301A746E7800388F29 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		28EECA321A746E7800388F29 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		28EECA351A746E7800388F29 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		28EECA3B1A746E7800388F29 /* E-gniteTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "E-gniteTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		28EECA401A746E7800388F29 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		28EECA411A746E7800388F29 /* E_gniteTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = E_gniteTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		28EECA231A746E7800388F29 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		28EECA381A746E7800388F29 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		28EECA1D1A746E7800388F29 = {
+			isa = PBXGroup;
+			children = (
+				28EECA281A746E7800388F29 /* E-gnite */,
+				28EECA3E1A746E7800388F29 /* E-gniteTests */,
+				28EECA271A746E7800388F29 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		28EECA271A746E7800388F29 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				28EECA261A746E7800388F29 /* E-gnite.app */,
+				28EECA3B1A746E7800388F29 /* E-gniteTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		28EECA281A746E7800388F29 /* E-gnite */ = {
+			isa = PBXGroup;
+			children = (
+				28EECA2B1A746E7800388F29 /* AppDelegate.swift */,
+				28EECA2D1A746E7800388F29 /* ViewController.swift */,
+				28EECA2F1A746E7800388F29 /* Main.storyboard */,
+				28EECA321A746E7800388F29 /* Images.xcassets */,
+				28EECA341A746E7800388F29 /* LaunchScreen.xib */,
+				28EECA291A746E7800388F29 /* Supporting Files */,
+			);
+			path = "E-gnite";
+			sourceTree = "<group>";
+		};
+		28EECA291A746E7800388F29 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				28EECA2A1A746E7800388F29 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		28EECA3E1A746E7800388F29 /* E-gniteTests */ = {
+			isa = PBXGroup;
+			children = (
+				28EECA411A746E7800388F29 /* E_gniteTests.swift */,
+				28EECA3F1A746E7800388F29 /* Supporting Files */,
+			);
+			path = "E-gniteTests";
+			sourceTree = "<group>";
+		};
+		28EECA3F1A746E7800388F29 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				28EECA401A746E7800388F29 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		28EECA251A746E7800388F29 /* E-gnite */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 28EECA451A746E7800388F29 /* Build configuration list for PBXNativeTarget "E-gnite" */;
+			buildPhases = (
+				28EECA221A746E7800388F29 /* Sources */,
+				28EECA231A746E7800388F29 /* Frameworks */,
+				28EECA241A746E7800388F29 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "E-gnite";
+			productName = "E-gnite";
+			productReference = 28EECA261A746E7800388F29 /* E-gnite.app */;
+			productType = "com.apple.product-type.application";
+		};
+		28EECA3A1A746E7800388F29 /* E-gniteTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 28EECA481A746E7800388F29 /* Build configuration list for PBXNativeTarget "E-gniteTests" */;
+			buildPhases = (
+				28EECA371A746E7800388F29 /* Sources */,
+				28EECA381A746E7800388F29 /* Frameworks */,
+				28EECA391A746E7800388F29 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				28EECA3D1A746E7800388F29 /* PBXTargetDependency */,
+			);
+			name = "E-gniteTests";
+			productName = "E-gniteTests";
+			productReference = 28EECA3B1A746E7800388F29 /* E-gniteTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		28EECA1E1A746E7800388F29 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "Chris Da silva";
+				TargetAttributes = {
+					28EECA251A746E7800388F29 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					28EECA3A1A746E7800388F29 = {
+						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = 28EECA251A746E7800388F29;
+					};
+				};
+			};
+			buildConfigurationList = 28EECA211A746E7800388F29 /* Build configuration list for PBXProject "E-gnite" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 28EECA1D1A746E7800388F29;
+			productRefGroup = 28EECA271A746E7800388F29 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				28EECA251A746E7800388F29 /* E-gnite */,
+				28EECA3A1A746E7800388F29 /* E-gniteTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		28EECA241A746E7800388F29 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28EECA311A746E7800388F29 /* Main.storyboard in Resources */,
+				28EECA361A746E7800388F29 /* LaunchScreen.xib in Resources */,
+				28EECA331A746E7800388F29 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		28EECA391A746E7800388F29 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		28EECA221A746E7800388F29 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28EECA2E1A746E7800388F29 /* ViewController.swift in Sources */,
+				28EECA2C1A746E7800388F29 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		28EECA371A746E7800388F29 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28EECA421A746E7800388F29 /* E_gniteTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		28EECA3D1A746E7800388F29 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 28EECA251A746E7800388F29 /* E-gnite */;
+			targetProxy = 28EECA3C1A746E7800388F29 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		28EECA2F1A746E7800388F29 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				28EECA301A746E7800388F29 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		28EECA341A746E7800388F29 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				28EECA351A746E7800388F29 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		28EECA431A746E7800388F29 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		28EECA441A746E7800388F29 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		28EECA461A746E7800388F29 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "E-gnite/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		28EECA471A746E7800388F29 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "E-gnite/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		28EECA491A746E7800388F29 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "E-gniteTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/E-gnite.app/E-gnite";
+			};
+			name = Debug;
+		};
+		28EECA4A1A746E7800388F29 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "E-gniteTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/E-gnite.app/E-gnite";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		28EECA211A746E7800388F29 /* Build configuration list for PBXProject "E-gnite" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				28EECA431A746E7800388F29 /* Debug */,
+				28EECA441A746E7800388F29 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		28EECA451A746E7800388F29 /* Build configuration list for PBXNativeTarget "E-gnite" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				28EECA461A746E7800388F29 /* Debug */,
+				28EECA471A746E7800388F29 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		28EECA481A746E7800388F29 /* Build configuration list for PBXNativeTarget "E-gniteTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				28EECA491A746E7800388F29 /* Debug */,
+				28EECA4A1A746E7800388F29 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 28EECA1E1A746E7800388F29 /* Project object */;
+}
