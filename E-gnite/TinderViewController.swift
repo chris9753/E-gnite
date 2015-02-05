@@ -27,9 +27,14 @@ class TinderViewController: UIViewController {
                 var user = PFUser.currentUser()
                 user["location"] = geopoint
                 
-                
+                var element : [Int] = user["range"] as Array
+                var minNum = minElement(element)
+                var maxNum = maxElement(element)
+                var distance = Double(user["distance"] as NSNumber)
                 var query = PFUser.query()
                 query.limit = 7
+                query.whereKey("age", lessThanOrEqualTo: maxNum)
+                query.whereKey("age", greaterThanOrEqualTo: minNum)
                 if PFUser.currentUser()["interestedInMen"] as Bool  {
                     query.whereKey("gender", equalTo: "male")
                 }
@@ -37,7 +42,7 @@ class TinderViewController: UIViewController {
                     query.whereKey("gender", equalTo: "female")
                 }
                 query.whereKey("username", notEqualTo: PFUser.currentUser().username)
-                query.whereKey("location", nearGeoPoint:geopoint)
+              query.whereKey("location", nearGeoPoint: geopoint, withinKilometers: distance)
                     switch PFUser.currentUser()["gender"] as String {
                     case "male":
                     query.whereKey("interestedInMen", equalTo: true)
