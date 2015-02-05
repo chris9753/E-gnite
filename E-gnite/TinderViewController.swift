@@ -15,6 +15,9 @@ class TinderViewController: UIViewController {
     var  usernames = [String]()
     var userImages = [NSData]()
     var currentUser = 0
+    @IBOutlet weak var frame: UIImageView!
+
+    @IBOutlet weak var image: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
                 //Getting Users Location
@@ -26,6 +29,7 @@ class TinderViewController: UIViewController {
                 
                 
                 var query = PFUser.query()
+                //query.limit = 7
                 if PFUser.currentUser()["interestedInMen"] as Bool  {
                     query.whereKey("gender", equalTo: "male")
                 }
@@ -67,17 +71,20 @@ class TinderViewController: UIViewController {
     }
     func addLabel(imageData : UIImage) {
         //Adding the Image
-        var userImage: UIImageView = UIImageView(frame: CGRectMake(0, 0, self.view.frame.width,self.view.frame.height))
-        userImage.contentMode = .ScaleAspectFit
-        userImage.image = imageData
-        orgState = userImage.center
-        self.view.addSubview(userImage)
+        //var userImage: UIImageView = UIImageView(frame: CGRectMake(0, 0, self.view.frame.width,self.view.frame.height))
+       image.contentMode = .ScaleAspectFit
+        image.image = imageData
+        orgState = image.center
+        image.addSubview(frame)
+        //self.view.insertSubview(image, atIndex: 0)
         
         //Attaching Gesture Recognition to Image
         var gesture = UIPanGestureRecognizer(target: self, action: Selector("wasDragged:"))
-        userImage.addGestureRecognizer(gesture)
+        image.addGestureRecognizer(gesture)
         
-        userImage.userInteractionEnabled = true
+        
+        image.userInteractionEnabled = true
+       
     }
     
     

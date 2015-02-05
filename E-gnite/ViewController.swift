@@ -13,7 +13,7 @@ class ViewController: UIViewController {
    
     @IBAction func login(sender:AnyObject) {
         self.label.alpha = 0
-        var permissions = ["public_profile"]
+        var permissions = ["public_profile","user_birthday"]
         
         PFFacebookUtils.logInWithPermissions(permissions, {
             (user: PFUser!, error: NSError!) -> Void in
@@ -25,6 +25,7 @@ class ViewController: UIViewController {
                 
             } else {
                 NSLog("User logged in through Facebook!")
+                 self.performSegueWithIdentifier("login", sender: self)
             }
         })
         
@@ -39,7 +40,7 @@ class ViewController: UIViewController {
        
         //Check User State
         if PFUser.currentUser() != nil {
-            println("The user is logged in")
+            self.performSegueWithIdentifier("login", sender: self)
         }
         
         
@@ -61,6 +62,11 @@ class ViewController: UIViewController {
 //        blurView.contentView.addSubview(vibrancyView)
 
 
+    }
+    override func viewDidAppear(animated: Bool) {
+        if PFUser.currentUser() != nil {
+             self.performSegueWithIdentifier("login", sender: self)
+        }
     }
 
     override func didReceiveMemoryWarning() {

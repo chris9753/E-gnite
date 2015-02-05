@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>5446511B-42FA-4373-BBCB-6B93E1A45567</string>
+	<key>IDESourceControlProjectName</key>
+	<string>E-gnite</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>C7ADC03E2E63AF95A105AFE8E51E52E2298D959C</key>
+		<string>https://github.com/chris9753/E-gnite.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>E-gnite.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>C7ADC03E2E63AF95A105AFE8E51E52E2298D959C</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/chris9753/E-gnite.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>C7ADC03E2E63AF95A105AFE8E51E52E2298D959C</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>C7ADC03E2E63AF95A105AFE8E51E52E2298D959C</string>
+			<key>IDESourceControlWCCName</key>
+			<string>E-gnite</string>
+		</dict>
+	</array>
+</dict>
+</plist>

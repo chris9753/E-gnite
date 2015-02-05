@@ -15,8 +15,11 @@ class SignUpViewController: UIViewController {
     @IBOutlet weak var theWay: UILabel!
     var womanIsSelected : Bool = false
     var manIsSelected : Bool = false
+    @IBOutlet weak var warning: UILabel!
     @IBOutlet weak var man: UIButton!
     @IBOutlet weak var woman: UIButton!
+    @IBOutlet weak var signUp: UIButton!
+    var userInteract = false
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -39,23 +42,26 @@ class SignUpViewController: UIViewController {
             
             user["Image"] = data
             user.save()
-            
             //Gender
             FBRequestConnection.startForMeWithCompletionHandler({
                 connection,result,error in
                 user["gender"] = result["gender"]
                 user["name"] = result["name"]
-                user.save()
                 self.userGender = result["gender"] as String
+                var birthday : String = result["birthday"] as String
+                var birthdayARR = birthday.componentsSeparatedByString("/")
+               let userBirth = birthdayARR[2].toInt()
+                let date = NSDate()
+                let flags: NSCalendarUnit = .YearCalendarUnit
+              let components = NSCalendar.currentCalendar().components(flags, fromDate: date)
+                let year = components.year
+                let age = year - userBirth!
+                user["age"] = age
+
+                user.save()
             })
         })
-        
-    }
-    
-    
-    
-    @IBAction func signUp(sender: AnyObject) {
-        
+     signUp.enabled = false
     }
 
     
@@ -74,6 +80,7 @@ class SignUpViewController: UIViewController {
             woman.setImage(womanDefault, forState: .Normal)
             womanIsSelected = false
             user["interestedInWomen"] = false
+            
         }
         user.save()
         stateCheck(userGender)
@@ -105,7 +112,7 @@ class SignUpViewController: UIViewController {
                 theWay.text = "Both ways"
             }
         }
-
+        self.signUp.enabled = true
     }
     
     
