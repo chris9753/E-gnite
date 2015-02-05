@@ -29,7 +29,7 @@ class TinderViewController: UIViewController {
                 
                 
                 var query = PFUser.query()
-                //query.limit = 7
+                query.limit = 7
                 if PFUser.currentUser()["interestedInMen"] as Bool  {
                     query.whereKey("gender", equalTo: "male")
                 }

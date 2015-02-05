@@ -410,8 +410,10 @@
                     <connections>
                         <outlet property="finalAge" destination="XBA-Um-ZiF" id="jyL-ud-Kx1"/>
                         <outlet property="firstAge" destination="tC3-dW-Bss" id="7zg-3l-Lkh"/>
+                        <outlet property="firstAgeVal" destination="Ky5-0x-7T3" id="W0r-5b-E5u"/>
                         <outlet property="kmDistance" destination="Ncs-Uw-87k" id="wZs-eV-LcB"/>
                         <outlet property="men" destination="ZEh-XL-izM" id="Jzc-qZ-Nva"/>
+                        <outlet property="secondAgeVal" destination="HVO-Cf-WLh" id="1rd-Yc-7xI"/>
                         <outlet property="sliderVal" destination="rgJ-CA-hsp" id="6yK-3g-t4s"/>
                         <outlet property="women" destination="H8r-pY-hqu" id="e7B-td-hp5"/>
                     </connections>

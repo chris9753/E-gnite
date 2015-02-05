@@ -42,25 +42,6 @@ class ViewController: UIViewController {
         if PFUser.currentUser() != nil {
             self.performSegueWithIdentifier("login", sender: self)
         }
-        
-        
-        //Visuals
-//        let blurEffect: UIBlurEffect = UIBlurEffect(style: .Light)
-//        
-//        let blurView: UIVisualEffectView = UIVisualEffectView(effect: blurEffect)
-//        blurView.setTranslatesAutoresizingMaskIntoConstraints(false)
-//        self.view.insertSubview(blurView, atIndex: 0)
-//        
-        
-        
-//        let vibrancyView: UIVisualEffectView = UIVisualEffectView(effect: UIVibrancyEffect(forBlurEffect: blurEffect))
-//        vibrancyView.setTranslatesAutoresizingMaskIntoConstraints(false)
-//                vibrancyView.contentView.insertSubview(logo, atIndex: 1)
-//                vibrancyView.contentView.insertSubview(loginButton, atIndex: 1)
-//       
-//       
-//        blurView.contentView.addSubview(vibrancyView)
-
 
     }
     override func viewDidAppear(animated: Bool) {
