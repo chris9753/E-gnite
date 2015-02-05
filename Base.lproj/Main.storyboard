@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="PEE-pm-lg9">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="IN7-fb-fqt">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
@@ -87,7 +87,7 @@
                         <outlet property="loginButton" destination="xti-MO-PQ7" id="1UW-a4-rRI"/>
                         <outlet property="logo" destination="x7x-B2-92J" id="BLH-25-ELG"/>
                         <segue destination="ViI-A9-7lY" kind="show" identifier="signUp" id="jHo-2f-OJd"/>
-                        <segue destination="Ofg-Ai-at7" kind="show" identifier="login" id="4FV-a0-Nxx"/>
+                        <segue destination="IN7-fb-fqt" kind="show" identifier="login" id="4FV-a0-Nxx"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WRF-Zt-ct4" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -182,7 +182,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="Ofg-Ai-at7" kind="presentation" id="cCJ-aZ-GJN"/>
+                                    <segue destination="IN7-fb-fqt" kind="presentation" id="cCJ-aZ-GJN"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -211,9 +211,9 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dMF-kw-Y3C" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1078" y="320"/>
+            <point key="canvasLocation" x="1078" y="313"/>
         </scene>
-        <!--Tinder View Controller-->
+        <!--Home-->
         <scene sceneID="Ww7-WI-8rx">
             <objects>
                 <viewController id="Ofg-Ai-at7" customClass="TinderViewController" customModule="E_gnite" customModuleProvider="target" sceneMemberID="viewController">
@@ -232,24 +232,6 @@
                                     <constraint firstAttribute="width" constant="329" id="afn-Q7-bg4"/>
                                 </constraints>
                             </imageView>
-                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="E9d-fX-F7x">
-                                <rect key="frame" x="0.0" y="692" width="414" height="44"/>
-                                <items>
-                                    <barButtonItem image="settings.png" id="G0M-oo-BNF">
-                                        <connections>
-                                            <segue destination="HhX-HJ-zVo" kind="presentation" modalPresentationStyle="currentContext" id="WKv-dp-0Gx"/>
-                                        </connections>
-                                    </barButtonItem>
-                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="vFp-Ia-kJL"/>
-                                    <barButtonItem image="main.png" id="DgS-4R-26P">
-                                        <color key="tintColor" red="0.0" green="0.48709939829999999" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                    </barButtonItem>
-                                    <barButtonItem width="108" style="plain" systemItem="fixedSpace" id="GoU-nq-rRV"/>
-                                    <barButtonItem image="acceptusers.png" id="YDR-FX-hsx"/>
-                                    <barButtonItem width="42" style="plain" systemItem="fixedSpace" id="aPN-Lg-1sX"/>
-                                </items>
-                                <color key="tintColor" red="0.95551215280000001" green="0.02168030399" blue="0.2716347569" alpha="1" colorSpace="calibratedRGB"/>
-                            </toolbar>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="tT4-Ur-yTu">
                                 <rect key="frame" x="88" y="199" width="225" height="224"/>
                                 <constraints>
@@ -261,13 +243,12 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="tT4-Ur-yTu" firstAttribute="top" secondItem="3Up-dv-CdP" secondAttribute="bottom" constant="179" id="0b8-zx-eXp"/>
-                            <constraint firstItem="uPy-Nz-E41" firstAttribute="top" secondItem="E9d-fX-F7x" secondAttribute="bottom" id="0gw-lR-kQv"/>
                             <constraint firstAttribute="centerX" secondItem="pBP-bx-30t" secondAttribute="centerX" id="1lM-F6-9Nt"/>
                             <constraint firstItem="tT4-Ur-yTu" firstAttribute="leading" secondItem="EuE-Mf-Qc6" secondAttribute="leadingMargin" constant="72" id="8by-07-H65"/>
                             <constraint firstAttribute="trailingMargin" secondItem="tT4-Ur-yTu" secondAttribute="trailing" constant="85" id="Nto-wL-R9h"/>
-                            <constraint firstItem="uPy-Nz-E41" firstAttribute="top" secondItem="E9d-fX-F7x" secondAttribute="bottom" id="erC-bO-cZC"/>
                         </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Home" image="main.png" id="zcu-NS-8JL"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
                     <connections>
                         <outlet property="frame" destination="pBP-bx-30t" id="ptv-tW-FcB"/>
@@ -276,7 +257,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nbZ-gh-Mwn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1545" y="320"/>
+            <point key="canvasLocation" x="2388" y="338"/>
         </scene>
         <!--Settings-->
         <scene sceneID="bJI-B9-m8z">
@@ -395,24 +376,6 @@
                                 <color key="textColor" red="0.0" green="0.48709939829999999" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2Bp-yT-UBX">
-                                <rect key="frame" x="0.0" y="692" width="414" height="44"/>
-                                <items>
-                                    <barButtonItem image="settings.png" id="3jO-XB-Jrp">
-                                        <color key="tintColor" red="0.0" green="0.48709939829999999" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                    </barButtonItem>
-                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="0O5-N4-Jez"/>
-                                    <barButtonItem image="main.png" id="Lmy-xy-BNI">
-                                        <connections>
-                                            <segue destination="Ofg-Ai-at7" kind="presentation" modalPresentationStyle="currentContext" id="jl2-3V-X4y"/>
-                                        </connections>
-                                    </barButtonItem>
-                                    <barButtonItem width="110" style="plain" systemItem="fixedSpace" id="svS-iI-gZu"/>
-                                    <barButtonItem image="acceptusers.png" id="bMi-bF-tro"/>
-                                    <barButtonItem width="42" style="plain" systemItem="fixedSpace" id="Zck-Be-Vba"/>
-                                </items>
-                                <color key="tintColor" red="0.95551215280000001" green="0.02168030399" blue="0.2716347569" alpha="1" colorSpace="calibratedRGB"/>
-                            </toolbar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -438,11 +401,11 @@
                             <constraint firstAttribute="centerX" secondItem="qIo-Tt-1eJ" secondAttribute="centerX" id="pqC-gZ-Ygm"/>
                             <constraint firstItem="Ncs-Uw-87k" firstAttribute="leading" secondItem="rgJ-CA-hsp" secondAttribute="trailing" constant="20" id="rS1-N7-qvX"/>
                             <constraint firstAttribute="trailingMargin" secondItem="XBA-Um-ZiF" secondAttribute="trailing" constant="36" id="rul-oe-T5f"/>
-                            <constraint firstItem="BfR-eu-jcO" firstAttribute="top" secondItem="2Bp-yT-UBX" secondAttribute="bottom" id="wto-Hm-Bge"/>
                             <constraint firstItem="m2j-Yy-1S6" firstAttribute="top" secondItem="ALO-Hj-vmT" secondAttribute="bottom" constant="40" id="xXT-4V-4uj"/>
                             <constraint firstItem="H8r-pY-hqu" firstAttribute="top" secondItem="qIo-Tt-1eJ" secondAttribute="bottom" constant="27" id="ylQ-xY-qu2"/>
                         </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Settings" image="settings.png" id="nb6-xs-BmZ"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
                     <connections>
                         <outlet property="finalAge" destination="XBA-Um-ZiF" id="jyL-ud-Kx1"/>
@@ -455,14 +418,62 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eSs-Tc-1P0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2038" y="320"/>
+            <point key="canvasLocation" x="2942" y="290"/>
+        </scene>
+        <!--Chat-->
+        <scene sceneID="gTv-Tf-1YI">
+            <objects>
+                <viewController id="rmY-kF-BQw" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="qTL-p9-FY3"/>
+                        <viewControllerLayoutGuide type="bottom" id="UNv-Da-Vg7"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="fri-Vg-Qo8">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Chat" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GzN-Bs-lJI">
+                                <rect key="frame" x="188" y="149" width="37" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Chat" image="chat.png" id="ien-MN-5Op"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VhL-AV-YR3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2388" y="1148"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="4mC-sn-Lan">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="IN7-fb-fqt" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="kEV-qt-Dwf">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="Ofg-Ai-at7" kind="relationship" relationship="viewControllers" id="Rq4-Hd-vkw"/>
+                        <segue destination="rmY-kF-BQw" kind="relationship" relationship="viewControllers" id="Ndz-S5-xMB"/>
+                        <segue destination="HhX-HJ-zVo" kind="relationship" relationship="viewControllers" id="x6d-nc-MQl"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gPh-JQ-RWh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1863" y="332"/>
         </scene>
     </scenes>
     <resources>
         <image name="10559716_10205457352490159_8723817881429482366_n.jpg" width="941" height="941"/>
         <image name="Bootstrap-Button-Generator.png" width="233" height="58"/>
-        <image name="acceptusers.png" width="26" height="26"/>
         <image name="bg.jpg" width="744" height="1392"/>
+        <image name="chat.png" width="36" height="36"/>
         <image name="egnitelogo2x.png" width="267" height="146"/>
         <image name="frame.png" width="945" height="1024"/>
         <image name="main.png" width="40" height="34"/>
@@ -473,6 +484,6 @@
         <image name="woman.png" width="243" height="475"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="4FV-a0-Nxx"/>
+        <segue reference="cCJ-aZ-GJN"/>
     </inferredMetricsTieBreakers>
 </document>
